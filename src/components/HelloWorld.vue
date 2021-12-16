@@ -1,5 +1,10 @@
 <template>
   <div class="hello">
+
+    <cars-list></cars-list>
+
+
+
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -31,8 +36,10 @@
 </template>
 
 <script>
+import CarsList from "@/components/CarsList";
 export default {
   name: 'HelloWorld',
+  components: {CarsList},
   props: {
     msg: String
   }
